@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <div class="container shadow">
+    <div class="display">
+         <label id="label2"></label> 
+<label id="label1">0</label>
+   </div>
+    <div class="extra_btns">
+<button onclick="operation ('+/-')">+/-</button>
+      <button onclick="operation ('CE')">CE</button>
+         <button onclick="operation ('C')">C</button>
+    </div>
+    <div class="main_btns">
+    <div class="clmn1">
+          <button onclick="onlabel('7')">7</button>
+        <button
+onclick="onlabel('4')">4</button>
+        <button onclick="onlabel('1')">1</button>
+        <button onclick="onlabel('0')">0</button>
+      </div>
+      <div class="clmn2">
+        <button onclick="onlabel('8')">8</button>
+        <button onclick="onlabel('5')">5</button>
+        <button onclick="onlabel('2')">2</button>
+        <button onclick="onlabel('00')">00</button> 
+      </div>
+      <div class="clmn3">
+        <button onclick="onlabel('9')">9</button>
+        <button onclick="onlabel('6')">6</button>
+        <button onclick="onlabel('3')">3</button>
+        <button onclick="onlabel('.')">.</button>
+      </div>
+      <div class="clmn4">
+        <button onclick="operation (' ÷')">÷</button>
+        <button onclick="operation (' ×')">×</button>
+        <button onclick="operation (' -')">-</button>
+        <button onclick="operation (' +')">+</button>
+      </div>
+      <div class="clmn5">
+        <button onclick="operation (' %')">%</button>
+        <button onclick="operation ('√')">√</button>
+        <button onclick="operation ('=')" class="equalbtn">=</button>
+      </div>
+  
+     </div>
+  </div>
+
+  <div id="anim">
+       <dotlottie-player src="https://lottie.host/971b691b-9c28-45a9-94e7-807ad3494544/h5YDrVvomH.json" background="transparent" speed="1" style="width: 20vh; height: 20vh;" loop autoplay></dotlottie-player>
+
+  <dotlottie-player class="rotate" src="https://lottie.host/1cc472f0-40aa-4d72-9fc7-7e97e145d936/3DPfVwvAEf.json" background="transparent" speed="1" style="width: 20vh; height: 20vh;" loop autoplay></dotlottie-player>
+  </div>
+  
+ <script src="script.js">
+</script>
+</body>
+</html>
