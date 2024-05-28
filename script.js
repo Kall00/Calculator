@@ -69,6 +69,11 @@ try{
   let num1=parseFloat(text_l2.replace(op,''));
   let num2=parseFloat(Id("l1").innerText.trim());
 
+  // check for '-' sign at begining and removed because of application of replace method above
+  if((text_l2.startsWith("-")) & (op=="-")){
+    num1="-"+num1;
+  }
+
   // conversion of symbol in case of symbol × and ÷
   if(op=='×'){
     op='*';
